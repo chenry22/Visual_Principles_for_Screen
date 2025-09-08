@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<!-- Site framework sourced from: https://2025-fall-washu-laurel.neocities.org 
+
+7) Modify your index.html to make your own profile card for this class.
+
+   * Make sure it looks, reads, and feels accurate to you.
+
+   * Fill in your own name, your favorite color, your favorite aspect ratio 
+     (after you research them), etc. to make this possible.
+
+   * If you feel compelled, put in the comments why you chose these things.
+-->
+
+<html>
+  <head>
+    <title>Caleb — (Visual) Principles for Screen, Fall 2025, WashU</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <link
+      rel="stylesheet"
+      href="https://2025-fall-washu.veryinteractive.net/assets/css/class.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://2025-fall-washu.veryinteractive.net/assets/css/profile.css"
+    />
+    <style>
+      html, body {
+         font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+         background-color: #bfffe6;
+      }
+      .profile {
+        background-color: white;
+      }
+      .aspect-ratio {
+        aspect-ratio: 4.0 / 5.0;
+
+        /* Choose your favorite color from Wada Sanzo: https://sanzo-wada.dmbk.io */
+        background-color: #96bfe6;
+      }
+
+      .profile-top div.name {
+        /* Choose the typeface for your name to display in */
+        
+        /* Learn about font stacks here: https://www.cssfontstack.com */
+        
+        font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+        
+        /* It's more advanced, but if you want to go beyond "Web Safe Fonts,"
+           you can also try a Google Font: 
+           
+           https://fonts.google.com
+        */
+        
+        /* Or for even more advanced, you could create your own font kit, 
+           by uploading a font: 
+           https://www.fontsquirrel.com/tools/webfont-generator */
+
+        font-size: 60px;
+      }
+      .selection {
+        font-family: Arial; 
+      }
+      .music-list li a {
+        text-decoration: none;
+      }
+      .desert-island-lists ul {
+        list-style: none;
+        padding: 0 10px;
+        margin: 6px 0;
+      }
+      .desert-island-lists ul li {
+        padding: 2px 0; 
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <div class="profile">
+        <div class="profile-top">
+          <div class="aspect-ratio"></div>
+          <div class="name-and-motto">
+            <div class="name">Caleb</div>
+            <div class="motto">
+              They say you miss every shot you don't take but if you miss all the shots you do take what's even the point.
+            </div>
+          </div>
+        </div>
+
+        <div class="profile-bottom">
+          <div class="category">Aspect ratio</div>
+          <div class="selection">4:5 — Not square</div>
+
+          <div class="category">Color</div>
+          <!-- Put the color you chose below, along with its hex code 
+               It's called a hex or hexadecimal code because there are six digits... 
+               More here: https://en.wikipedia.org/wiki/Hexadecimal. -->
+          <div class="selection"><a href="https://sanzo-wada.dmbk.io/swatch/salvia-blue">Salvia Blue — #96bfe6</a></div>
+          <!-- Colors on the web can also be displayed in RGB (red, green, blue) and some known color names.
+               More here: https://en.wikipedia.org/wiki/Web_colors -->
+
+          <div class="category">Typeface</div>
+          <div class="selection">Calibri</div>
+
+          <div class="category">Unicode</div>
+          <!-- Pick a favorite Unicode character, copy it, and paste it below -->
+          <!-- Google for lists or go here: https://en.wikipedia.org/wiki/List_of_Unicode_characters -->
+          <div class="selection">🐈</div>
+
+          <div class="category">Music</div>
+          <div class="selection">
+            <!-- Share some music below.
+                 The tag below is a hyperlink or anchor tag,
+                 so place a link to some music — on Spotify, Soundcloud, YouTube, etc. 
+                 and then what you want to title it inside of the <a> tag. -->
+            <a href="https://music.apple.com/us/playlist/all-time-playlist-real/pl.u-06oxpzbCY8Za1r1">
+              every song I've ever listened to
+            </a>
+          </div>
+
+          <div class="category">Desert Island Lists</div>
+          <div class="selection desert-island-lists">
+            <!-- Put some of your Desert Island List content below.
+                 Feel free to adjust the categories to your liking. -->
+            <details>
+              <summary>Albums</summary>
+              <ul class="music-list">
+                <li><a href="https://music.apple.com/us/album/blue-rev/1651269389">Blue Rev - Alvvays</a></li>
+                <li><a href="https://music.apple.com/us/album/say-things-that-matter/1573353203">Say Things That Matters - M.A.G.S.</a></li>
+                <li><a href="https://music.apple.com/us/album/anthology-2/1834472444">Anthology 2 - The Beatles</a></li>
+              </ul>
+            </details>
+            <details>
+              <summary>Books</summary>
+              <ul>
+                <li>House of Leaves - Mark Z. Danielewski</li>
+                <li>Ideal - Ayn Rand</li>
+                <li>The Odyssey - Homer</li>
+              </ul>
+            </details>
+            <details>
+              <summary>Apps</summary>
+              <ul>
+                <li>Canva</li>
+                <li>Google Docs</li>
+                <li>Apple Music</li>
+              </ul>
+            </details>
+          </div>
+
+          <!-- Sign off here -->
+          <div class="outro">
+            Created on 08/25/2025 at 3:14pm in Weil Hall
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
