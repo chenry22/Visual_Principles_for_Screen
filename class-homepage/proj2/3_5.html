@@ -1,0 +1,203 @@
+<!-- 
+    div
+    span
+    h1, h2, h3, h4, h5, h6
+    strong
+    em
+    ol, ul, li
+    a 
+    p
+    br
+    &nbsp;
+
+    padding
+    border
+    margin
+    position
+    display
+    float
+    top, right, bottom, left
+    height, width
+
+
+    Three Horses Drink Water at the Riverbank
+
+    One white, one red, one black<br/>
+    Three horses are drinking at the riverbank<br/>
+    They drink at their own pace, some up</br/>
+    Some down<br/>
+    Sometimes their heads reach the river<br/>
+    At the same time <br/>
+    As if a river were flowing<br/>
+    Out of their mouths <br/>
+    As their minds flow from the river source<br/>
+    Still innocent, clear, undisturbed<br/>
+    The sun is setting slowly<br/>
+    A man watches, without blinking<br/>
+    How a river disappears into the night<br/>
+    Held in the mouths of three horses
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 2.3.5</title>
+    
+    <style>
+        #title {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .dot-horses {
+            display: flex;
+        }
+        .dot-horses li {
+            padding-left: 40px;
+            margin-top: 12px;
+        }
+
+        .water {
+            border: 20px solid rgb(126, 166, 245);
+            margin: 0;
+            margin-top: -20px;
+            padding-left: 40px;
+        }
+
+        .body {
+            width: fit-content;
+            padding: 20px 40px;
+        }
+
+        .line {
+            display: flex;
+        }
+        .line h5 {
+            margin: 0;
+            margin-left: 50px;
+            padding: 0;
+        }
+
+        .color {
+            width: fit-content;
+            padding: 6px;
+            margin: 4px;
+        }
+        .white {
+            border: 4px solid rgb(229, 229, 229);
+        }
+        .red {
+            border: 4px solid rgb(221, 48, 48);
+        }
+        .black {
+            border: 4px solid rgb(0, 0, 0);
+        }
+        .blue {
+            border: 4px solid rgb(64, 101, 211);
+        }
+
+        .dot-overlay {
+            position: relative;
+            width: fit-content;
+        }
+        .dot-overlay div {
+            position: absolute;
+            top: 0px;
+        }
+        .dot-overlay div ul {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2 id="title">
+             <div class="dot-horses">
+                <ul class="dot-horses"><li></li><li></li><li></li></ul>
+                <h3>Three Horses Drink Water at the</h3>
+            </div>
+        </h2>
+        <h2 class="water">Riverbank</h2>
+    </div>
+
+    <div class="body">
+        <div class="line">
+            <div class="color white">One white,</div>
+            <div class="color red">one red,</div>
+            <div class="color black">one black</div>
+        </div>
+        <div class="color blue">
+            Three horses are drinking at the riverbank
+        </div>
+        <br/>
+        <div class="dot-overlay">
+            <em>They drink at their own pace, some up</em>
+            <div style="right: -10px; top: 1px;"><ul>
+                <li></li>
+                <li style="margin-left: -27px;"></li>
+                <li style="margin-left: -54px;"></li>
+                <li style="margin-left: -81px;"></li>
+                <li style="margin-left: -108px;"></li>
+            </ul></div>
+        </div>
+        <div class="dot-overlay">
+            <em>Some down</em>
+            <div style="right: -46px; top: 1px;"><ul>
+                <li></li>
+                <li style="margin-left: 27px;"></li>
+                <li style="margin-left: 54px;"></li>
+            </ul></div>
+        </div>
+
+        <br><br><br>
+        Sometimes their <strong>heads</strong> reach the 
+        <div class="water">river</div>
+        <br>
+       <div class="line">
+            At the same <h5>time</h5>
+       </div>
+       <br>
+       <div class="dot-overlay">
+            <em>As if a river were flowing</em>
+            <div style="right: -132px; top: 1px;"><ul>
+                <li></li>
+                <li style="margin-left: 38px;"></li>
+                <li style="margin-left: 76px;"></li>
+                <li style="margin-left: 114px;"></li>
+                <li style="margin-left: 152px;"></li>
+            </ul></div>
+        </div>
+        <div class="dot-overlay" style="margin-left: 300px;">
+            <em> Out of their mouths</em>
+            <div style="right: 18px; top: 1px;"><ul>
+                <li></li>
+                <li style="margin-left: -38px;"></li>
+                <li style="margin-left: -76px;"></li>
+                <li style="margin-left: -114px;"></li>
+            </ul></div>
+        </div>
+        <br><br>
+        <div style="margin-left: 46px;">
+            As their minds flow from the river source<br/>
+            <div class="water">
+                Still innocent, clear, undisturbed<br>
+                <em>The sun is setting slowly</em><br>
+            </div>
+
+            <br>
+            A man watches, without blinking<br/>
+            <div style="position: fixed; right: 100px; bottom: 0;">
+                How a river disappears into the night<br/>
+                <div class="water">
+                    Held in the mouths of three
+                    <div class="water" style="height: 50px; margin: 0;">
+                        <h2>horses</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
