@@ -1,0 +1,179 @@
+<!-- 
+    Three Horses Drink Water at the Riverbank
+
+    One white, one red, one black<br/>
+    Three horses are drinking at the riverbank<br/>
+    They drink at their own pace, some up</br/>
+    Some down<br/>
+    Sometimes their heads reach the river<br/>
+    At the same time <br/>
+    As if a river were flowing<br/>
+    Out of their mouths <br/>
+    As their minds flow from the river source<br/>
+    Still innocent, clear, undisturbed<br/>
+    The sun is setting slowly<br/>
+    A man watches, without blinking<br/>
+    How a river disappears into the night<br/>
+    Held in the mouths of three horses
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica+SC&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 2.5.4</title>
+    
+    <style>
+        @keyframes blue-blob {
+            0% { 
+                background-color: rgba(19, 19, 100, 0.5); 
+                color: white;
+                border-radius: 24px; 
+            }
+            50% { 
+                background-color: rgba(255, 255, 255, 0); 
+                border-radius: 10px; 
+                color: black;
+            }
+            100% { 
+                background-color: rgba(19, 19, 100, 0.5); 
+                color: white;
+                border-radius: 24px; 
+            }
+        }
+        body {
+            font-family: "IM Fell DW Pica SC", serif;
+            margin: 20px 30px;
+            color: rgb(2, 20, 68);
+        }
+        input:checked {
+            border: 4px solid blue;
+            margin: 10px;
+        }
+        label:active {
+            padding: 10px;
+            animation: blue-blob 3s ease-in-out infinite alternate-reverse;
+        }
+
+        div:hover {
+            background-color: rgba(221, 246, 255, 0.483);
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div>
+            <h3>
+                <input type="radio" id="horses" name="title" value="0">
+                <label for="horses">Three Horses</label><br>
+                <input type="radio" id="drink" name="title" value="1">
+                <label for="drink">Drink Water</label><br>
+                <input type="radio" id="riverbank" name="title" value="2">
+                <label for="riverbank">at the Riverbank</label>
+            </h3>
+        </div>
+
+        <div>
+            <label for="white">
+                <input type="number" id="white" value="1" placeholder="One" min="0" max="3">
+                white,
+            </label>
+            <label for="red">
+                <input type="number" id="red" value="1" placeholder="one" min="0" max="3">
+                red,
+            </label>
+            <label for="black">
+                <input type="number" id="black" value="1" placeholder="one" min="0" max="3">
+                black
+            </label>
+        </div>
+        <div>
+            <label for="num-horses">
+                <input type="number" id="num-horses" value="3" placeholder="Three" min="0" max="10">
+                horses are drinking
+            </label>
+            <br>
+            <input type="checkbox" id="riverbank-check">
+            <label for="riverbank-check">at the riverbank</label>
+        </div>
+        <br>
+        <div>
+            They drink at their own pace,
+            <input type="button" id="up" value="some up"></input>
+            <br>
+            <input type="button" id="down" value="Some down"></input>
+        </div>
+        <br>
+        <div>
+            Sometimes their heads
+            <br>
+            <label for="reach">
+                <input type="checkbox" id="reach">
+                reach the river
+            </label>
+            <br>
+            <label for="time">At the same</label>
+            <input type="time" id="time" name="time">
+            time
+        </div>
+        <br>
+        <div>
+            <input type="radio" id="as" name="as-if" value="0">
+            <label for="as">As if</label><br>
+            <input type="radio" id="a-river" name="as-if" value="1">
+            <label for="a-river">a river</label><br>
+            <input type="radio" id="were" name="as-if" value="2">
+            <label for="were">were flowing</label>
+            <br>
+            Out of their mouths
+        </div>
+        <br>
+        <div>
+            <label for="flow">As their minds flow</label><br>
+            <input type="range" id="flow" name="flow" min="0" max="200" value="0">
+            <br>
+            <label for="riversource-check">
+                <input type="checkbox" id="riversource-check">
+                From the river source
+            </label>
+        </div>
+        <br>
+        <div>
+            Still innocent,
+            <input type="reset" id="clear" value="clear,"/>
+            undisturbed
+        </div>
+        <br>
+        <div>
+            <label for="flow">The sun is set</label>
+            <input type="range" id="set" name="setting" min="0" max="24" value="0">
+            ting slowly
+        </div>
+        <div>
+            <input type="text" value="A man watches, without blinking" disabled>
+        </div>
+        <br>
+        <div>
+            <input type="radio" id="how" name="how" value="0">
+            <label for="how">How a</label>
+            <input type="radio" id="riverr" name="how" value="1">
+            <label for="riverr">river</label>
+            <input type="radio" id="disappears" name="how" value="2" disabled>
+            <label for="disappears">disappears</label>
+            <input type="radio" id="night" name="how" value="3">
+            <label for="night">into the night</label>
+        </div>
+        <div>
+            <input type="text" id="final-action" value="Held" placeholder="Held">
+            in the mouths of
+            <input type="number" id="final-num-horses" value="3" placeholder="three">
+            <input type="submit" value="horses">
+        </div>
+    </form>
+
+</body>
+</html>

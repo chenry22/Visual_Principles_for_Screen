@@ -1,0 +1,140 @@
+<!-- 
+    Three Horses Drink Water at the Riverbank
+
+    One white, one red, one black<br/>
+    Three horses are drinking at the riverbank<br/>
+    They drink at their own pace, some up</br/>
+    Some down<br/>
+    Sometimes their heads reach the river<br/>
+    At the same time <br/>
+    As if a river were flowing<br/>
+    Out of their mouths <br/>
+    As their minds flow from the river source<br/>
+    Still innocent, clear, undisturbed<br/>
+    The sun is setting slowly<br/>
+    A man watches, without blinking<br/>
+    How a river disappears into the night<br/>
+    Held in the mouths of three horses
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Square+Peg&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 2.5.5</title>
+
+    <style>
+        :root {
+            --animation-time: 8s;
+        }
+        @keyframes body-shift {
+            from {
+                background-color: rgb(81, 131, 217);
+                color: white;
+                text-shadow: 2px 2px 2px rgba(14, 4, 62, 0.1);
+                letter-spacing: -0.03em;
+            }
+            to {
+                background-color: rgb(5, 16, 77);
+                color: rgba(243, 255, 21, 0.947);
+                text-shadow: 2px 2px 2px rgba(255, 251, 43, 0.3);
+                letter-spacing: 0.3em;
+            }
+        }
+        @keyframes sunset {
+            to { transform: translateY(120px);}
+        }
+
+        body {
+            width: fit-content;
+        }
+        body:hover {
+            width: auto;
+            color: white;
+            text-align: center;
+            padding: 40px;
+            font-family: "Square Peg", cursive;
+            font-size: 24px;
+
+            animation: body-shift var(--animation-time) ease-in-out infinite alternate;
+        }
+        h2 {
+            margin: 0;
+            margin-bottom: 8px;
+        }
+
+        body:hover #sun {
+            position: relative;
+            background-color: rgb(255, 249, 77);
+            color: rgb(119, 56, 5);
+            width: fit-content;
+            font-size: 26px;
+            padding: 24px 14px;
+            margin-left: 30%;
+            letter-spacing: -0.02em;
+            line-height: 24px;
+
+            border-radius: 50px;
+            text-shadow: none;
+
+            z-index: 0;
+            animation: sunset var(--animation-time) ease-in-out infinite alternate;
+        }
+        body:hover #set {
+            line-height: 30px;
+            letter-spacing: 0.1em;
+            padding: 20px;
+            font-size: 30px;
+            position: relative;
+            text-shadow: none;
+            z-index: 2;
+            background-color: rgb(6, 78, 28);
+            color: rgb(128, 246, 167);
+        }
+
+        .left {
+            width: fit-content;
+        }
+        body:hover .right {
+            width: fit-content;
+            margin-left: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="body">
+        <h2>Three Horses Drink<br>Water at the Riverbank</h2>
+        
+        <div class="left">
+            One white, one red, one black<br>
+            Three horses are drinking at the riverbank<br>
+            They drink at their own pace, some up
+        </div>
+        <div class="right">
+            Some down<br>
+            Sometimes their heads reach the river
+        </div>
+        At the same time <br/>
+        As if a river were flowing<br/>
+        Out of their mouths <br/>
+        <div class="right">
+            As their minds flow from the river source<br/>
+            Still innocent, clear, undisturbed
+        </div>
+        <div id="sun">
+            The sun is<br>
+            setting slowly
+        </div>
+        <div id="set">
+            A man watches, without blinking<br>
+            How a river disappears into the night<br>
+            Held in the mouths of three horses
+        </div>
+    </div>
+</body>
+</html>
