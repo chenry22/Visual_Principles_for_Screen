@@ -1,55 +1,260 @@
+<!-- 
+    each level as a river
+    each iteration as a horse / sun / person
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sometype+Mono:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Links...</title>
+    <title>Project 2 - 25 Variations</title>
+
+    <style>
+        @keyframes river-warp {
+            to { 
+                letter-spacing: 0.9em;
+                background-color: rgb(28, 51, 134);
+            }
+        }
+        @keyframes bg-color-shift {
+            from { background-color: rgba(50, 180, 45, 0.8); }
+            to { background-color: rgba(81, 221, 81, 0.8); }
+        }
+        html {
+            font-family: "Sometype Mono", monospace;
+            margin: 0;
+            animation: bg-color-shift 10s linear infinite alternate;
+        }
+
+        body {
+            margin: 0;
+            margin-bottom: 100px;
+        }
+        #header {
+            margin: 40px;
+            margin-bottom: 60px;
+            text-align: center;
+            color: rgb(3, 67, 3);
+        }
+        #header h1 {
+            margin: 0;
+            margin-bottom: 10px;
+        }
+        #header h3 {
+            margin: 0;
+            margin-bottom: 16px;
+        }
+        #link {
+            padding: 4px 10px;
+            font-style: italic;
+            font-size: medium;
+
+            box-shadow: 0px 0px 20px rgb(60, 217, 60);
+            text-decoration: underline;
+        }
+        #link:hover {
+            color: black;
+        }
+
+        .variation-container {
+            display: flex;
+            flex-direction: column;
+            gap: 70px;
+        }
+        .variation {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .left {
+            margin-left: 5%;
+        }
+        .center {
+            justify-content: center;
+        }
+        .right {
+            justify-content: right;
+            margin-right: 5%;
+        }
+
+        .river {
+            position: relative;
+            z-index: 0;
+            background-color: rgb(37, 72, 186);
+            color: rgb(226, 244, 255);
+
+            font-size: large;
+            text-transform: uppercase;
+            font-weight: bold;
+            text-align: center;
+
+            padding: 36px 0;
+            width: 100%;
+            
+            animation: river-warp 12s ease-in-out infinite alternate;
+        }
+        .river:hover {
+            background-color: rgb(29, 29, 154);
+        }
+
+        .divider {
+            margin: 0 auto;
+            width: 95%;
+            height: 0px;
+            border: 1px dotted rgba(8, 167, 8, 0.7);
+        }
+
+        a {
+            padding: 12px 16px;
+            border-radius: 12px;
+            box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4);
+
+            text-decoration: unset;
+            color: unset;
+            transition: font-size 0.5s ease;
+        }
+        a:hover {
+            font-size: large;
+            text-decoration: underline;
+        }
+
+        .top {
+            display: flex;
+            gap: 8%;
+            height: 20px;
+        }
+        .top div {
+            transform:scale(1.05, 1.05);
+        }
+        .sun {
+            position: relative;
+            z-index: 0;
+            background-color: rgb(255, 242, 53);
+            color: rgb(50, 47, 0);
+        }
+        .man {
+            position: relative;
+            z-index: 0;
+            background-color: rgb(251, 245, 194);
+            color: rgb(89, 85, 36);
+        }
+
+        .horses {
+            display: flex;
+            gap: 3%;
+            transform: translateY(-4px);
+            height: 20px;
+        }
+        .red {
+            position: relative;
+            z-index: 1;
+            background-color: rgb(176, 47, 24);
+            color: rgb(255, 224, 218);
+        }
+        .black {
+            position: relative;
+            z-index: 1;
+            background-color: rgb(8, 1, 23);
+            color: rgb(216, 216, 216);
+        }
+        .white {
+            position: relative;
+            z-index: 1;
+            background-color: rgb(255, 255, 255);
+            color: rgb(31, 31, 31);
+        }
+    </style>
 </head>
 <body>
-    <h4>Here they are...</h4>
-    <a href="https://www.poetryfoundation.org/poetrymagazine/poems/1690435/three-horses-drink-water-at-the-riverbank" target="_blank">
-        Original Poem: Three Horse Drink Water at the Riverbank</a>
-    <ul>
-        <li>Level 1</li>
-        <ul>
-            <li><a href="1_1.html">Iteration 1</a></li>
-            <li><a href="1_2.html">Iteration 2</a></li>
-            <li><a href="1_3.html">Iteration 3</a></li>
-            <li><a href="1_4.html">Iteration 4</a></li>
-            <li><a href="1_5.html">Iteration 5</a></li>
-        </ul>
-        <li>Level 2</li>
-        <ul>
-            <li><a href="2_1.html">Iteration 1</a></li>
-            <li><a href="2_2.html">Iteration 2</a></li>
-            <li><a href="2_3.html">Iteration 3</a></li>
-            <li><a href="2_4.html">Iteration 4</a></li>
-            <li><a href="2_5.html">Iteration 5</a></li>
-        </ul>
-        <li>Level 3</li>
-        <ul>
-            <li><a href="3_1.html">Iteration 1</a></li>
-            <li><a href="3_2.html">Iteration 2</a></li>
-            <li><a href="3_3.html">Iteration 3</a></li>
-            <li><a href="3_4.html">Iteration 4</a></li>
-            <li><a href="3_5.html">Iteration 5</a></li>
-        </ul>
-        <li>Level 4</li>
-        <ul>
-            <li><a href="4_1.html">Iteration 1</a></li>
-            <li><a href="4_2.html">Iteration 2</a></li>
-            <li><a href="4_3.html">Iteration 3</a></li>
-            <li><a href="4_4.html">Iteration 4</a></li>
-            <li><a href="4_5.html">Iteration 5</a></li>
-        </ul>
-        <li>Level 5</li>
-        <ul>
-            <li><a href="5_1.html">Iteration 1</a></li>
-            <li><a href="5_2.html">Iteration 2</a></li>
-            <li><a href="5_3.html">Iteration 3</a></li>
-            <li><a href="5_4.html">Iteration 4</a></li>
-            <li><a href="5_5.html">Iteration 5</a></li>
-        </ul>
-    </ul>
+    <div id="content">
+        <div id="header">
+            <h1>Visual Principles for Screen FL25</h1>
+            <h3>Project 2 // 25 Variations</h3>
+            <a id="link" href="https://www.poetryfoundation.org/poetrymagazine/poems/1690435/three-horses-drink-water-at-the-riverbank" target="_blank">
+                Original Poem: Three Horse Drink Water at the Riverbank</a>
+        </div>
+
+        <div class="variation-container">
+            <div class="variation">
+                <div class="top left">
+                    <div><a class="sun" href="1_1.html">Iteration 1</a></div>
+                    <div><a class="man" href="1_2.html">Iteration 2</a></div>
+                </div>
+                <div class="river">
+                    Level 1 - Spacing
+                </div>
+                <div class="horses right">
+                    <div><a class="white" href="1_3.html">Iteration 3</a></div>
+                    <div><a class="red" href="1_4.html">Iteration 4</a></div>
+                    <div><a class="black" href="1_5.html">Iteration 5</a></div>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="variation">
+                <div class="top center">
+                    <div><a class="sun" href="2_1.html">Iteration 1</a></div>
+                    <div><a class="man" href="2_2.html">Iteration 2</a></div>
+                </div>
+                <div class="river">
+                    Level 2 - Hierarchies & Scale
+                </div>
+                <div class="horses center">
+                    <div><a class="white" href="2_3.html">Iteration 3</a></div>
+                    <div><a class="red" href="2_4.html">Iteration 4</a></div>
+                    <div><a class="black" href="2_5.html">Iteration 5</a></div>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="variation">
+                <div class="top right">
+                    <div><a class="sun" href="3_4.html">Iteration 4</a></div>
+                    <div><a class="man" href="3_5.html">Iteration 5</a></div>
+                </div>
+                <div class="river">
+                    Level 3 - Positioning
+                </div>
+                <div class="horses left">
+                    <div><a class="white" href="3_1.html">Iteration 1</a></div>
+                    <div><a class="red" href="3_2.html">Iteration 2</a></div>
+                    <div><a class="black" href="3_3.html">Iteration 3</a></div>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="variation">
+                <div class="top center">
+                    <div><a class="sun" href="4_1.html">Iteration 1</a></div>
+                    <div><a class="man" href="4_2.html">Iteration 2</a></div>
+                </div>
+                <div class="river">
+                    Level 4 - Typography
+                </div>
+                <div class="horses right">
+                    <div><a class="white" href="4_3.html">Iteration 3</a></div>
+                    <div><a class="red" href="4_4.html">Iteration 4</a></div>
+                    <div><a class="black" href="4_5.html">Iteration 5</a></div>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="variation">
+                <div class="top left">
+                    <div><a class="sun" href="5_1.html">Iteration 1</a></div>
+                    <div><a class="man" href="5_2.html">Iteration 2</a></div>
+                </div>
+                <div class="river">
+                    Level 5 - Color & Animation
+                </div>
+                <div class="horses center">
+                    <div><a class="white" href="5_3.html">Iteration 3</a></div>
+                    <div><a class="red" href="5_4.html">Iteration 4</a></div>
+                    <div><a class="black" href="5_5.html">Iteration 5</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

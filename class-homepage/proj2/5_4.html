@@ -26,6 +26,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project 2.5.4</title>
+    <link rel="stylesheet" href="nav-style.css"/>
     
     <style>
         @keyframes blue-blob {
@@ -59,14 +60,14 @@
             animation: blue-blob 3s ease-in-out infinite alternate-reverse;
         }
 
-        div:hover {
+        .section:hover {
             background-color: rgba(221, 246, 255, 0.483);
         }
     </style>
 </head>
 <body>
     <form>
-        <div>
+        <div class="section">
             <h3>
                 <input type="radio" id="horses" name="title" value="0">
                 <label for="horses">Three Horses</label><br>
@@ -77,7 +78,7 @@
             </h3>
         </div>
 
-        <div>
+        <div class="section">
             <label for="white">
                 <input type="number" id="white" value="1" placeholder="One" min="0" max="3">
                 white,
@@ -91,7 +92,7 @@
                 black
             </label>
         </div>
-        <div>
+        <div class="section">
             <label for="num-horses">
                 <input type="number" id="num-horses" value="3" placeholder="Three" min="0" max="10">
                 horses are drinking
@@ -101,14 +102,14 @@
             <label for="riverbank-check">at the riverbank</label>
         </div>
         <br>
-        <div>
+        <div class="section">
             They drink at their own pace,
             <input type="button" id="up" value="some up"></input>
             <br>
             <input type="button" id="down" value="Some down"></input>
         </div>
         <br>
-        <div>
+        <div class="section">
             Sometimes their heads
             <br>
             <label for="reach">
@@ -121,7 +122,7 @@
             time
         </div>
         <br>
-        <div>
+        <div class="section">
             <input type="radio" id="as" name="as-if" value="0">
             <label for="as">As if</label><br>
             <input type="radio" id="a-river" name="as-if" value="1">
@@ -132,7 +133,7 @@
             Out of their mouths
         </div>
         <br>
-        <div>
+        <div class="section">
             <label for="flow">As their minds flow</label><br>
             <input type="range" id="flow" name="flow" min="0" max="200" value="0">
             <br>
@@ -142,13 +143,13 @@
             </label>
         </div>
         <br>
-        <div>
+        <div class="section">
             Still innocent,
             <input type="reset" id="clear" value="clear,"/>
             undisturbed
         </div>
         <br>
-        <div>
+        <div class="section">
             <label for="flow">The sun is set</label>
             <input type="range" id="set" name="setting" min="0" max="24" value="0">
             ting slowly
@@ -157,7 +158,7 @@
             <input type="text" value="A man watches, without blinking" disabled>
         </div>
         <br>
-        <div>
+        <div class="section">
             <input type="radio" id="how" name="how" value="0">
             <label for="how">How a</label>
             <input type="radio" id="riverr" name="how" value="1">
@@ -167,7 +168,7 @@
             <input type="radio" id="night" name="how" value="3">
             <label for="night">into the night</label>
         </div>
-        <div>
+        <div class="section">
             <input type="text" id="final-action" value="Held" placeholder="Held">
             in the mouths of
             <input type="number" id="final-num-horses" value="3" placeholder="three">
@@ -175,5 +176,16 @@
         </div>
     </form>
 
+    <nav>
+        <div class="next">
+            <a href="5_5.html">Next</a>
+        </div>
+        <div class="prev">
+            <a href="5_3.html">Prev</a>
+        </div>
+        <div class="home">
+            <a href="index.html">Home</a>
+        </div>
+    </nav>
 </body>
 </html>

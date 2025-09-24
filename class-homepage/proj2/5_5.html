@@ -27,10 +27,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project 2.5.5</title>
+    <link rel="stylesheet" href="nav-style.css"/>
 
     <style>
         :root {
-            --animation-time: 8s;
+            --animation-time: 10s;
         }
         @keyframes body-shift {
             from {
@@ -51,9 +52,13 @@
         }
 
         body {
-            width: fit-content;
+            margin: 0;
         }
-        body:hover {
+        .content {
+            width: fit-content;
+            padding: 4px 10px;
+        }
+        .content:hover {
             width: auto;
             color: white;
             text-align: center;
@@ -68,7 +73,7 @@
             margin-bottom: 8px;
         }
 
-        body:hover #sun {
+        .content:hover #sun {
             position: relative;
             background-color: rgb(255, 249, 77);
             color: rgb(119, 56, 5);
@@ -85,7 +90,7 @@
             z-index: 0;
             animation: sunset var(--animation-time) ease-in-out infinite alternate;
         }
-        body:hover #set {
+        .content:hover #set {
             line-height: 30px;
             letter-spacing: 0.1em;
             padding: 20px;
@@ -100,14 +105,14 @@
         .left {
             width: fit-content;
         }
-        body:hover .right {
+        .content:hover .right {
             width: fit-content;
             margin-left: auto;
         }
     </style>
 </head>
 <body>
-    <div class="body">
+    <div class="content">
         <h2>Three Horses Drink<br>Water at the Riverbank</h2>
         
         <div class="left">
@@ -136,5 +141,14 @@
             Held in the mouths of three horses
         </div>
     </div>
+
+    <nav>
+        <div class="prev">
+            <a href="5_4.html">Prev</a>
+        </div>
+        <div class="home">
+            <a href="index.html">Home</a>
+        </div>
+    </nav>
 </body>
 </html>
