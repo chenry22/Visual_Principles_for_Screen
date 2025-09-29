@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Sometype+Mono:ital,wght@0,400..700;1,400..700&display=swap');
+
 nav {
     letter-spacing: normal;
     line-height: normal;
@@ -14,41 +16,45 @@ nav {
 
 nav div {
     pointer-events: all;
-    color: white;
-    background-color: rgb(16, 138, 199);
-    opacity: 0.55;
-    padding: 28px 20px;
-    border-radius: 48px;
-
     transition: transform 2s ease, border-radius 1s ease, padding 1.5s ease, opacity 0.8s ease;
 }
 nav div a {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(16, 138, 199);
+    opacity: 0.5;
+    border-radius: 36px;
+    padding: 30px 22px;
+
     text-transform: uppercase;
-    font-family:'Courier New', Courier, monospace;
-    color: inherit;
+    font-family: "Sometype Mono", monospace;
+    /* font-family: 'Courier New', Courier, monospace; */
+
+    transition: transform 2s ease, border-radius 1s ease, padding 1.5s ease, opacity 0.8s ease;
 }
 
-nav div:hover {
+nav div a:hover {
+    text-decoration: underline;
     opacity: 1;
     background-color: (16, 138, 199, 1.0);
-    padding: 32px 24px;
-    border-radius: 42px;
+    padding: 34px 26px;
+    border-radius: 48px;
     transform: scale(1.1);
 }
 
-nav .prev {
+nav .prev a {
     position: absolute;
     bottom: var(--div-offset);
     left: var(--div-offset);
 }
 
-nav .next {
+nav .next a {
     position: absolute;
     top: var(--div-offset);
     right: var(--div-offset);
 }
 
-nav .home {
+nav .home a {
     background-color: rgb(33, 102, 14);
     position: absolute;
     bottom: var(--div-offset);
