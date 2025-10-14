@@ -1,0 +1,83 @@
+.divider {
+    height: 2px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#section-index {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin: 0 10%;
+}
+
+.section-preview-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.section-preview-container img {
+    flex: 0 1 ;
+    aspect-ratio: 1;
+    height: 30dvh;
+}
+
+.section-preview-content {
+    flex: 1 0;
+}
+.section-preview-content * {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    margin: 0;
+    padding: 4px 0 0;
+}
+h3 {
+    margin: 0;
+    padding: 4px 0 10px;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.ideal {
+    color: rgb(204, 21, 21);
+    font-weight: bold;
+}
+.kay-gonda {
+    color: rgb(123, 0, 148);
+    font-weight: bold;
+}
+
+
+#page-title {
+    margin: 0 auto;
+    text-align: center;
+}
+#page {
+    margin: 40px 14%;
+    text-indent: 2rem;
+}
+#page p {
+    margin: 4px 0 ;
+}
+
+.script {
+    text-indent: 0;
+}
+
+.pull-quote {
+    text-indent: 0;
+    margin: 1rem 2rem;
+    padding: 4px 20px;
+    border-left: 1px solid rgb(13, 13, 55);
+}
+.block {
+    margin: 0 2rem;
+}
+.small-caps {
+    font-style: normal;
+    font-variant: small-caps;
+}
