@@ -87,7 +87,7 @@ h3 {
 }
 
 #page-content {
-    margin: 0 14vw;
+    margin: 0 10vw;
     gap: 32px;
     padding-bottom: 100px;
 }
@@ -113,6 +113,57 @@ h3 {
     text-align: center;
 }
 
+
+
+
+
+/* Page Turner */
+#page-turner {
+    position: fixed;
+    display: flex;
+    justify-content:space-between;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+#prev-page {
+    background-color: rgb(214, 209, 255);
+    color: black;
+    padding: 10px;
+} 
+#next-page {
+    background-color: rgb(191, 200, 255);
+    color: black;
+    padding: 10px;
+} 
+
+
+
+
+
+/* Scenes */
+.no-indent {
+    text-indent: 0;
+}
+.letter {
+    font-family: cursive;
+    color: black;
+    background-color: rgb(251, 251, 250);
+
+    padding: 18px 36px;
+    width: 420px;
+    margin: 20px auto;
+    columns: 1;
+}
+.script {
+    column-width: 32vw;
+}
+.page {
+    display: none;
+}
+.active {
+    display: block;
+}
 
 
 
