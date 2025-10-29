@@ -1,3 +1,7 @@
+:root {
+    --bottom-header-space: 30px;
+}
+
 html {
     background-color: rgb(32, 6, 32);
     color: white;
@@ -13,11 +17,18 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    height: 91vh;
+    overflow: auto;
     gap: 40px;
     margin: 0 10%;
 }
+#scene-index-padding {
+    padding: 1px 1px 0;
+}
 
 .section-preview-container {
+    padding: 0 20px;
     display: flex;
     flex-direction: row;
     gap: 20px;
@@ -37,6 +48,13 @@ html {
 .section-preview-content * {
     margin: 0;
     padding: 0;
+}
+
+.section-preview-text {
+    margin-top: 32px;
+    height: 20vh;
+    overflow: hidden;
+    text-indent: 1.5rem;
 }
 
 h2 {
@@ -67,6 +85,8 @@ h3 {
 }
 
 
+
+
 #page-title {
     padding-bottom: 10px;
     margin-bottom: 20px;
@@ -80,7 +100,7 @@ h3 {
 
     font-family:Georgia, 'Times New Roman', Times, serif;
     margin: 40px 3% 0;
-    text-indent: 2rem;
+    text-indent: 1.5rem;
 }
 #page p {
     margin: 4px 0 ;
@@ -94,8 +114,8 @@ h3 {
 
 .pull-quote {
     text-indent: 0;
-    margin: 1rem 2rem;
-    padding: 4px 20px;
+    margin: 1rem 1.5rem;
+    padding: 4px 1rem;
     border-left: 1px solid rgb(13, 13, 55);
 }
 .block {
@@ -111,6 +131,26 @@ h3 {
 .center {
     margin: 0 auto;
     text-align: center;
+}
+
+
+
+
+
+/* Header */
+.header {
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 6px 0px;
+
+    position:sticky;
+    background-color: rgb(171, 11, 46);
+}
+.header a {
+    color: white;
 }
 
 
@@ -156,7 +196,7 @@ h3 {
     columns: 1;
 }
 .script {
-    column-width: 32vw;
+    column-width: 34vw;
 }
 .page {
     display: none;
@@ -170,7 +210,10 @@ h3 {
 
 /* CHARACTERS */
 .content {
-    margin: 4vh 0;
+    padding-top: var(--bottom-header-space);
+    height: 98vh;
+    overflow: auto;
+    position: relative;
 }
 .center {
     text-align: center;
