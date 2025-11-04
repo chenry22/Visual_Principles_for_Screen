@@ -13,6 +13,7 @@ function previousPage() {
                 pages[i].classList.remove('active');
                 pages[i - 1].classList.add('active');
                 updatePageNumURL(i - 1);
+                window.scrollTo(0,0);
             }
             return;
         }
@@ -27,6 +28,7 @@ function nextPage() {
                 pages[i].classList.remove('active');
                 pages[i + 1].classList.add('active');
                 updatePageNumURL(i + 1);
+                window.scrollTo(0,0);
             }
             return;
         }
