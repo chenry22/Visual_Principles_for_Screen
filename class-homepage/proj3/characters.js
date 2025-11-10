@@ -1,92 +1,157 @@
 var characters = [
-    ["Bill McNitt", "Screen Director", ""],
-    ["Clair Peemoller", "Scenario Writer", "It's preposterous! <i>But</i> preposterous!"],
-    ["Sol Salzer", "Associate Producer", "Calm he wants at a time like this!"],
-    ["Anthony Farrow", "President of the Farrow Film Studios", ""],
-    ["Frederica Sayers", "", ""],
-    ["Mick Watts", "Press Agent", ""],
-    ["George S. Perkins", "Assistant Manager of the Daffodil Canning Co.", ""],
-    ["Mrs. Perkins", "George Perkins' Wife", ""],
-    ["Mrs. Shly", "Mrs. Perkins' Mother", ""],
-    ["<span class='kay-gonda'>Kay Gonda</span>", "", ""],
-    ["Chuck Fink", "Sociologist", ""],
-    ["Fanny Fink", "Chuck Fink's Wife", ""],
-    ["Dwight Langley", "Artst", ""],
-    ["Eunice Hammond", "", ""],
-    ["Claude Ignatius Hix", "Evangelist", ""],
-    ["Sister Essie Twomey", "Evangelist", ""],
-    ["Count Dietrich von Esterhazy", "", ""],
-    ["Lalo Jans", "", ""],
-    ["Mrs. Monaghan", "Landlady", ""],
-    ["Johnnie Dawes", "", ""]
+    ["Bill McNitt", "Screen Director", "I don't give a damn if <span class='kay-gonda'>you</span> break your neck, but <span class='kay-gonda'>you</span>'ll get pneumonia in the middle of my next picture!"],
+    ["Clair Peemoller", "Scenario Writer", "Honestly, I don't understand what they all see in <span class='kay-gonda'>her</span>, anyway!"],
+    ["Sol Salzer", "Associate Producer", "Twenty thousand a week we offer <span class='kay-gonda'>her</span> and <span class='kay-gonda'>she</span> asks is it worth doing!"],
+    ["Anthony Farrow", "President of the Farrow Film Studios", "The greatest star of the screen! The dream woman of the world! They worship <span class='kay-gonda'>her</span>, millions of them."],
+    ["Frederica Sayers", "", " I do not hate <span class='kay-gonda'>her</span> at all."],
+    ["Mick Watts", "Press Agent", "It's useless to yell “<span class='kay-gonda'>Kay Gonda</span>” and to think that all your sins are washed away."],
+    ["George S. Perkins", "Assistant Manager of the Daffodil Canning Co.", "There's something in me that knows of a life I've never lived, the kind of life no one has ever lived, but should."],
+    ["Mrs. Perkins", "George Perkins' Wife", "That will be the end of everything you've ever held dear. And in exchange for what?"],
+    ["Mrs. Shly", "Mrs. Perkins' Mother", "Have you gone plumb outta your mind?"],
+    ["<span class='kay-gonda'>Kay Gonda</span>", "", "Of what account are dreams?"],
+    ["Chuck Fink", "Sociologist", "We all dream of the perfect being that man could be. But no one has ever seen it. <span class='kay-gonda'>You</span> have."],
+    ["Fanny Fink", "Chuck Fink's Wife", "Think of your duty to millions of your brothers. Millions to one."],
+    ["Dwight Langley", "Artst", "<span class='kay-gonda'>Kay Gonda</span> is the symbol of all the beauty I bring to the world, a beauty we can never reach."],
+    ["Claude Ignatius Hix", "Evangelist", "<span class='kay-gonda'>You</span> cannot escape from your crime. Then do not try to run from it. Give up. Surrender. Confess."],
+    ["Sister Essie Twomey", "Evangelist", "To make a long story short, I'll give you five hundred bucks and you can move your junk out."],
+    ["Count Dietrich von Esterhazy", "", "Perhaps <span class='kay-gonda'>you</span> have taken a life in order to save another."],
+    ["Lalo Jans", "", "Oh, don't be a melodramatic fool!"],
+    ["Johnnie Dawes", "", "<span class='kay-gonda'>You</span> are looking at something <span class='kay-gonda'>you</span> will never see again— a man who is perfectly happy!"]
 ];
 
 var quotes = [
     [ // McNitt
-        [ "McNITT: I’ve always expected something like this from Gonda!", "PROLOGUE"],
-        [ "McNITT: Yesterday morning, it was. I drove up to her beach home and there <span class='kay-gonda'>she</span> was, out at sea, tearing through the rocks in a motorboat till I thought I’d have heart failure watching it.", "PROLOGUE" ],
-        [ "McNITT: Try and stop her! So <span class='kay-gonda'>she</span> climbs up to the road, finally, wet all over.\"You’ll get killed someday,\" I say to <span class='kay-gonda'>her</span>, and <span class='kay-gonda'>she</span> looks straight at me and <span class='kay-gonda'>she</span> says, \"That won’t make any difference to me,\" <span class='kay-gonda'>she</span> says, \"nor to anyone else anywhere.\"", "PROLOGUE"],
-        [ "McNITT: \"Listen,\" I said, \"I don’t give a damn if you break your neck, but you’ll get pneumonia in the middle of my next picture!\" <span class='kay-gonda'>She</span> looks at me in that damnable way of <span class='kay-gonda'>hers</span> and <span class='kay-gonda'>she</span> says, \"Maybe there won’t be any next picture.\" And <span class='kay-gonda'>she</span> walks straight back to the house and <span class='kay-gonda'>her</span> damn flunky wouldn’t let me in!", "PROLOGUE"],
+        [ "McNITT: I've always expected something like this from <span class='kay-gonda'>Gonda</span>!", "PROLOGUE"],
+        [ "McNITT: Yesterday morning, it was. I drove up to her beach home and there <span class='kay-gonda'>she</span> was, out at sea, tearing through the rocks in a motorboat till I thought I'd have heart failure watching it.", "PROLOGUE" ],
+        [ "McNITT: Try and stop her! So <span class='kay-gonda'>she</span> climbs up to the road, finally, wet all over.\"You'll get killed someday,\" I say to <span class='kay-gonda'>her</span>, and <span class='kay-gonda'>she</span> looks straight at me and <span class='kay-gonda'>she</span> says, \"That won't make any difference to me,\" <span class='kay-gonda'>she</span> says, \"nor to anyone else anywhere.\"", "PROLOGUE"],
+        [ "McNITT: \"Listen,\" I said, \"I don't give a damn if you break your neck, but you'll get pneumonia in the middle of my next picture!\" <span class='kay-gonda'>She</span> looks at me in that damnable way of <span class='kay-gonda'>hers</span> and <span class='kay-gonda'>she</span> says, \"Maybe there won't be any next picture.\" And <span class='kay-gonda'>she</span> walks straight back to the house and <span class='kay-gonda'>her</span> damn flunky wouldn't let me in!", "PROLOGUE"],
         [ "McNITT: <span class='kay-gonda'>She</span> did— damn the slut! I never wanted to direct <span class='kay-gonda'>her</span>, anyway. I . . .", "PROLOGUE" ],
-        ["McNITT: I don’t give a damn myself! I’d much rather direct Joan Tudor anyway.", "PROLOGUE"]
+        ["McNITT: I don't give a damn myself! I'd much rather direct Joan Tudor anyway.", "PROLOGUE"],
+        ["McNITT: If you let me punch the bastard just once, he’ll talk all right.", "PROLOGUE"],
+        ["McNITT: Jesus, it beats me what they all see in that bitch!", "PROLOGUE"]
     ],
     [ // Peemoller
         [ "CLAIRE: I see absolutely no sense in behaving like this. We can talk about something else, can't we?", "PROLOGUE" ],
-        [ "CLAIRE: <i>[With unconvincing lightness]</i> I saw the rushes of Love Nest yesterday. It’s a smash, but a smash! You should see Eric in that scene where he kills the old man and . . . <i>[A sudden jerk from the others. She stops short]</i> Oh, I see. I beg your pardon. <i>[Silence. She resumes uneasily]</i> Well, I’ll tell you about my new car. The gorgeous thing is so chic! It’s simply dripping, but dripping with chromium! I was doing eighty yesterday and not a bump! They say this new Sayers Gas is . . . <i>[There is a stunned, involuntary gasp from the others. She looks at two tense faces]</i> Well, what on earth is the matter?", "PROLOGUE" ],
-        [ "CLAIRE: It’s preposterous! <i>But</i> preposterous!", "PROLOGUE" ],
-        [ "CLAIRE: But it’s all over town! Hints, whispers, questions. If I could see any point in it, I’d say someone was spreading it intentionally.", "PROLOGUE" ],
+        [ "CLAIRE: <i>[With unconvincing lightness]</i> I saw the rushes of Love Nest yesterday. It's a smash, but a smash! You should see Eric in that scene where he kills the old man and . . . <i>[A sudden jerk from the others. She stops short]</i> Oh, I see. I beg your pardon. <i>[Silence. She resumes uneasily]</i> Well, I'll tell you about my new car. The gorgeous thing is so chic! It's simply dripping, but dripping with chromium! I was doing eighty yesterday and not a bump! They say this new Sayers Gas is . . . <i>[There is a stunned, involuntary gasp from the others. She looks at two tense faces]</i> Well, what on earth is the matter?", "PROLOGUE" ],
+        [ "CLAIRE: It's preposterous! <i>But</i> preposterous!", "PROLOGUE" ],
+        [ "CLAIRE: But it's all over town! Hints, whispers, questions. If I could see any point in it, I'd say someone was spreading it intentionally.", "PROLOGUE" ],
         [ "CLAIRE: When has <span class='kay-gonda'>she</span> ever told anyone anything?", "PROLOGUE" ],
-        [ "CLAIRE: Down-to-earthiness, that’s what <span class='kay-gonda'>she</span> lacks. You know. No finer feelings. But none! No sense of human brotherhood. Honestly, I don’t understand what they all see in <span class='kay-gonda'>her</span>, anyway!", "PROLOGUE" ],
-        [ "CLAIRE: I don’t know why <span class='kay-gonda'>she</span> draws them like that. <span class='kay-gonda'>She</span>’s completely heartless. I went down to <span class='kay-gonda'>her</span> house yesterday afternoon—to discuss<span class='kay-gonda'> her</span> next script. And what’s the use? <span class='kay-gonda'>She</span> wouldn’t let me put in a baby or a dog, as I wanted to. Dogs have such human appeal. You know, we’re all brothers under the skin, and . . .", "PROLOGUE" ],
-        ["CLAIRE: <span class='kay-gonda'>She</span> got up and left me flat, saying <span class='kay-gonda'>she</span> had to dress. “I’m going to Santa Barbara tonight,” <span class='kay-gonda'>she</span> said. Then <span class='kay-gonda'>she</span> added, “I do not like missions of charity.”", "PROLOGUE"],
-        ["CLAIRE: What does <span class='kay-gonda'>she</span> mean by anything? So then I just couldn’t resist it, but couldn’t! I said, “<span class='kay-gonda'>Miss Gonda</span>, do you really think you’re so much better than everybody else?” And what did <span class='kay-gonda'>she</span> have the nerve to answer? “Yes,” <span class='kay-gonda'>she</span> said, “I do. I wish I didn’t have to.”", "PROLOGUE"],
-        ["CLAIRE: A pose, Mr. Salzer, just a pose. <span class='kay-gonda'>She</span>’s said that after every picture.", "PROLOGUE"],
-        ["CLAIRE: That’s the kind of trash <span class='kay-gonda'>she</span> gathers around her. But the rest of us aren’t good enough for <span class='kay-gonda'>her</span>! Well, if <span class='kay-gonda'>she</span>’s got herself into a mess now—I’m glad. Yes, glad! I don’t see why we should all worry ourselves sick over it.", "PROLOGUE"],
-        ["CLAIRE: And I’d just as soon write for Sally Sweeney. She’s such a sweet kid. And . . .", "PROLOGUE"],
+        [ "CLAIRE: Down-to-earthiness, that's what <span class='kay-gonda'>she</span> lacks. You know. No finer feelings. But none! No sense of human brotherhood. Honestly, I don't understand what they all see in <span class='kay-gonda'>her</span>, anyway!", "PROLOGUE" ],
+        [ "CLAIRE: I don't know why <span class='kay-gonda'>she</span> draws them like that. <span class='kay-gonda'>She</span>'s completely heartless. I went down to <span class='kay-gonda'>her</span> house yesterday afternoon—to discuss<span class='kay-gonda'> her</span> next script. And what's the use? <span class='kay-gonda'>She</span> wouldn't let me put in a baby or a dog, as I wanted to. Dogs have such human appeal. You know, we're all brothers under the skin, and . . .", "PROLOGUE" ],
+        ["CLAIRE: <span class='kay-gonda'>She</span> got up and left me flat, saying <span class='kay-gonda'>she</span> had to dress. “I'm going to Santa Barbara tonight,” <span class='kay-gonda'>she</span> said. Then <span class='kay-gonda'>she</span> added, “I do not like missions of charity.”", "PROLOGUE"],
+        ["CLAIRE: What does <span class='kay-gonda'>she</span> mean by anything? So then I just couldn't resist it, but couldn't! I said, “<span class='kay-gonda'>Miss Gonda</span>, do you really think you're so much better than everybody else?” And what did <span class='kay-gonda'>she</span> have the nerve to answer? “Yes,” <span class='kay-gonda'>she</span> said, “I do. I wish I didn't have to.”", "PROLOGUE"],
+        ["CLAIRE: A pose, Mr. Salzer, just a pose. <span class='kay-gonda'>She</span>'s said that after every picture.", "PROLOGUE"],
+        ["CLAIRE: That's the kind of trash <span class='kay-gonda'>she</span> gathers around her. But the rest of us aren't good enough for <span class='kay-gonda'>her</span>! Well, if <span class='kay-gonda'>she</span>'s got herself into a mess now—I'm glad. Yes, glad! I don't see why we should all worry ourselves sick over it.", "PROLOGUE"],
+        ["CLAIRE: And I'd just as soon write for Sally Sweeney. She's such a sweet kid. And . . .", "PROLOGUE"],
+        ["CLAIRE: [Tugging at FARROW’s sleeve] Tony, you won’t tell <span class='kay-gonda'>her</span> what I said, will you, Tony? I’ve always been <span class='kay-gonda'>her</span> best friend! I’ll do anything to please <span class='kay-gonda'>her</span>! I’ve always . . ", "PROLOGUE"]
     ],
     [ // Salzer
-        [ "SALZER: <i>[Eagerly]</i> There’s Tony! He’ll tell us! He must know something!", "PROLOGUE" ],
-        [ "SALZER: Well, that’s that. You, too. And I thought you knew something!", "PROLOGUE"],
+        [ "SALZER: <i>[Eagerly]</i> There's Tony! He'll tell us! He must know something!", "PROLOGUE" ],
+        [ "SALZER: Well, that's that. You, too. And I thought you knew something!", "PROLOGUE"],
         [ "SALZER: Calm he wants at a time like this!", "PROLOGUE" ],
         [ "SALZER: <i>Us</i> the papers should avoid!", "PROLOGUE" ],
-        [ "SALZER: God! I wish we’d never signed <span class='kay-gonda'>her</span>! A headache we should have ever since <span class='kay-gonda'>she</span> came on the lot!", "PROLOGUE" ],
+        [ "SALZER: God! I wish we'd never signed <span class='kay-gonda'>her</span>! A headache we should have ever since <span class='kay-gonda'>she</span> came on the lot!", "PROLOGUE" ],
         [ "SALZER: Where did we find <span class='kay-gonda'>her</span>? In the gutter we found <span class='kay-gonda'>her</span>! In the gutter in Vienna! What do we get for our pains? Gratitude we get?", "PROLOGUE" ],
-        ["SALZER: Maybe <span class='kay-gonda'>she</span>’s changed <span class='kay-gonda'>her</span> mind again, and quit for good.", "PROLOGUE"],
-        ["SALZER: Yeah? You should laugh if you had to crawl after <span class='kay-gonda'>her</span> on your knees like we’ve done for two months. “I’m through,” <span class='kay-gonda'>she</span> says. “Does it really mean anything?” Five million net per each picture—does it mean anything! “Is it really worth doing?” Ha! Twenty thousand a week we offer <span class='kay-gonda'>her</span> and <span class='kay-gonda'>she</span> asks is it worth doing!", "PROLOGUE"],
+        ["SALZER: Maybe <span class='kay-gonda'>she</span>'s changed <span class='kay-gonda'>her</span> mind again, and quit for good.", "PROLOGUE"],
+        ["SALZER: Yeah? You should laugh if you had to crawl after <span class='kay-gonda'>her</span> on your knees like we've done for two months. “I'm through,” <span class='kay-gonda'>she</span> says. “Does it really mean anything?” Five million net per each picture—does it mean anything! “Is it really worth doing?” Ha! Twenty thousand a week we offer <span class='kay-gonda'>her</span> and <span class='kay-gonda'>she</span> asks is it worth doing!", "PROLOGUE"],
+        ["SALZER: —and here’s what he was handing out for a press release! [Straightens out a slip of paper he has crumpled in his hand, reads:] “<span class='kay-gonda'>Kay Gonda</span> does not cook her own meals or knit her own underwear. <span class='kay-gonda'>She</span> does not play golf, adopt babies, or endow hospitals for homeless horses. <span class='kay-gonda'>She</span> is not kind to her dear old mother— <span class='kay-gonda'>she</span> has no dear old mother. <span class='kay-gonda'>She</span> is not just like you and me. <span class='kay-gonda'>She</span> never was like you and me. <span class='kay-gonda'>She</span>’s like nothing you bastards ever dreamt of!”", "PROLOGUE"],
+        ["SALZER: [Impatiently] Look here, Watts, you must know something. You’d better play ball with us. Remember, you’ve been fired from every newspaper on both coasts— so that if anything should happen to <span class='kay-gonda'>Gonda</span>, you won’t have a job here unless you help us now and . . .", "PROLOGUE"]
     ],
     [ // Farrow
-        ["FARROW: No panic, please. There is no occasion for panic. I have called you here in order to formulate our policy in this emergency, coolly and calmly and . . . [The interoffice communicator on his desk buzzes sharply. He leaps forward, his great calm forgotten, clicks the switch, speaks anxiously] Yes? . . . You did? Santa Barbara? . . . Give it to me! . . . <i>What?!</i> Miss Sayers won’t speak to <i>me</i>?! . . . She can’t be out—it’s an evasion! Did you tell them it was Anthony Farrow? Of the Farrow Films? . . . Are you sure you made it clear? <i>President</i> of the Farrow Films? . . . [His voice falling dejectedly] I see. . . . When did Miss Sayers leave? . . . It’s an evasion. Try again in half an hour. . . . And try again to get the chief of police.", "PROLOGUE" ],
+        ["FARROW: No panic, please. There is no occasion for panic. I have called you here in order to formulate our policy in this emergency, coolly and calmly and . . . [The interoffice communicator on his desk buzzes sharply. He leaps forward, his great calm forgotten, clicks the switch, speaks anxiously] Yes? . . . You did? Santa Barbara? . . . Give it to me! . . . <i>What?!</i> Miss Sayers won't speak to <i>me</i>?! . . . She can't be out—it's an evasion! Did you tell them it was Anthony Farrow? Of the Farrow Films? . . . Are you sure you made it clear? <i>President</i> of the Farrow Films? . . . [His voice falling dejectedly] I see. . . . When did Miss Sayers leave? . . . It's an evasion. Try again in half an hour. . . . And try again to get the chief of police.", "PROLOGUE" ],
         [ "FARROW: Let us be systematic. We cannot face a crisis without a system. Let us have discipline, calm. Am I understood? . . . [Breaks in two a pencil he has been playing with nervously] <i>Calm!</i>", "PROLOGUE"],
-        [ "FARROW: Let us . . . [The intercom buzzes. He leaps to it] Yes? . . . Fine! Put him on! . . . [Very jovially] Hel-lo, Chief! How are you? I . . . [Sharply] What do you mean you have nothing to say? This is <i>Anthony Farrow</i> speaking! . . . Well, it usually <i>does</i> make a difference. Hell . . . I mean, Chief, there’s only one question I have to ask you, and I think I’m entitled to an answer. Have there or have there not been any charges filed in Santa Barbara? [Through his teeth] Very well. . . . Thank you. [Switches off, trying to control himself]", "PROLOGUE" ],
-        ["FARROW: [Hopelessly] No one will talk. [Turns to the intercom again] Miss Drake? . . . Have you tried <span class='kay-gonda'>Miss Gonda</span>’s home once more? . . . Have you tried all <span class='kay-gonda'>her</span> friends? . . . I know <span class='kay-gonda'>she</span> hasn’t any, but try them anyway! [Is about to switch off, then adds] And get Mick Watts, if you can find the bast—if you can find him. If anyone knows, <i>he</i> knows!", "PROLOGUE" ],
+        [ "FARROW: Let us . . . [The intercom buzzes. He leaps to it] Yes? . . . Fine! Put him on! . . . [Very jovially] Hel-lo, Chief! How are you? I . . . [Sharply] What do you mean you have nothing to say? This is <i>Anthony Farrow</i> speaking! . . . Well, it usually <i>does</i> make a difference. Hell . . . I mean, Chief, there's only one question I have to ask you, and I think I'm entitled to an answer. Have there or have there not been any charges filed in Santa Barbara? [Through his teeth] Very well. . . . Thank you. [Switches off, trying to control himself]", "PROLOGUE" ],
+        ["FARROW: [Hopelessly] No one will talk. [Turns to the intercom again] Miss Drake? . . . Have you tried <span class='kay-gonda'>Miss Gonda</span>'s home once more? . . . Have you tried all <span class='kay-gonda'>her</span> friends? . . . I know <span class='kay-gonda'>she</span> hasn't any, but try them anyway! [Is about to switch off, then adds] And get Mick Watts, if you can find the bast—if you can find him. If anyone knows, <i>he</i> knows!", "PROLOGUE" ],
         [ "FARROW: Personally, I do not believe the story for a minute. However, I want all the information you can give me. I take it that none of you has seen <span class='kay-gonda'>Miss Gonda</span> since yesterday?", "PROLOGUE" ],
-        [ "FARROW: [Clicking the switch] Yes? . . . Who? Who is Goldstein and Goldstein? . . . [Exploding] Tell them to go to hell! . . . Wait! Tell them <span class='kay-gonda'>Miss Gonda</span> does not need any attorneys! Tell them you don’t know what on earth made them think <span class='kay-gonda'>she</span> did! [Switches off furiously]", "PROLOGUE" ],
-        ["FARROW: Well, Granton Sayers—you know Granton Sayers. A reckless fool. Fifty million dollars, three years ago. Today—who knows? Perhaps, fifty thousand. Perhaps, fifty cents. But cut-crystal swimming pools and Greek temples in his garden. . . And <span class='kay-gonda'>Kay Gonda</span>. An expensive little plaything or artwork, depending on how you want to look at it. <span class='kay-gonda'>Kay Gonda</span>, that is, two years ago. Not today. I know that <span class='kay-gonda'>she</span> had not seen Sayers for over a year, previous to that dinner in Santa Barbara last night.", "PROLOGUE"],
+        [ "FARROW: [Clicking the switch] Yes? . . . Who? Who is Goldstein and Goldstein? . . . [Exploding] Tell them to go to hell! . . . Wait! Tell them <span class='kay-gonda'>Miss Gonda</span> does not need any attorneys! Tell them you don't know what on earth made them think <span class='kay-gonda'>she</span> did! [Switches off furiously]", "PROLOGUE" ],
         ["FARROW: You know, I have an idea that <span class='kay-gonda'>she</span> will come here at five. It would be just like <span class='kay-gonda'>her</span>. <span class='kay-gonda'>She</span> is so utterly unpredictable. We cannot judge <span class='kay-gonda'>her</span> actions by the usual standards. With <span class='kay-gonda'>her</span>— anything is possible.", "PROLOGUE"],
-        ["FARROW: Miss Sayers, let us get this clear. I have been trying to get in touch with you since early this morning. You must know who started these rumors. And you must realize how utterly preposterous it is. <span class='kay-gonda'>Miss Gonda</span> happens to have dinner with your brother last night. He is found dead, this morning, with a bullet through him. . . . Most unfortunate and I do sympathize, believe me, but is this ground enough for a suspicion of murder against a lady of <span class='kay-gonda'>Miss Gonda</span>’s standing? Merely the fact that <span class='kay-gonda'>she</span> happened to be the last one seen with him?", "PROLOGUE"],
+        ["FARROW: Miss Sayers, let us get this clear. I have been trying to get in touch with you since early this morning. You must know who started these rumors. And you must realize how utterly preposterous it is. <span class='kay-gonda'>Miss Gonda</span> happens to have dinner with your brother last night. He is found dead, this morning, with a bullet through him. . . . Most unfortunate and I do sympathize, believe me, but is this ground enough for a suspicion of murder against a lady of <span class='kay-gonda'>Miss Gonda</span>'s standing? Merely the fact that <span class='kay-gonda'>she</span> happened to be the last one seen with him?", "PROLOGUE"],
         ["FARROW: Did <span class='kay-gonda'>she</span> . . . did <span class='kay-gonda'>she</span> really do it?", "PROLOGUE"],
-
+        ["FARROW: Look here, I'll offer you a bargain. You tell me everything and I'll take you to <span class='kay-gonda'>Miss Gonda</span>. Not otherwise.", "PROLOGUE"],
+        ["FARROW: [Rushing after her] Wait! Miss Sayers! Wait a moment! [She turns to him] I'm so sorry! Please forgive me! I'm . . . I'm quite upset, as you can well understand. I beg of you, Miss Sayers, consider what it means! The greatest star of the screen! The dream woman of the world! They worship <span class='kay-gonda'>her</span>, millions of them. It's practically a cult.", "PROLOGUE"],
+        ["FARROW: You wouldn't say that if you read <span class='kay-gonda'>her</span> fan mail. Do you think it comes from shopgirls and schoolkids, like the usual kind of trash? No. Not <span class='kay-gonda'>Kay Gonda</span>'s mail. From college professors and authors and judges and ministers! Everybody! Dirt farmers and international names! It's extraordinary! I've never seen anything like it in my whole career. <br><br>I don't know what <span class='kay-gonda'>she</span> does to them all—but <span class='kay-gonda'>she</span> does something. <span class='kay-gonda'>She</span>'s not a movie star to them—<span class='kay-gonda'>she</span>'s a goddess. [Correcting himself hastily] Oh, forgive me. I understand how you must feel about <span class='kay-gonda'>her</span>. Of course, you and I know that <span class='kay-gonda'>Miss Gonda</span> is not exactly above reproach. <span class='kay-gonda'>She</span> is, in fact, a very objectionable person who . . .", "PROLOGUE"],
+        ["FARROW: That, Miss Sayers, is a question I've been asking myself for years. <span class='kay-gonda'>She</span>'s a strange woman.", "PROLOGUE"],
+        ["FARROW: Smile, all of you! Smile! Don’t let <span class='kay-gonda'>her</span> think that we thought for a minute that <span class='kay-gonda'>she</span> . . .", "PROLOGUE"]
     ],
     [ // Miss Sayers
-        ["MISS SAYERS: [Brushing her aside] Abominable discipline in your studio, Farrow! That’s no way to run the place. [MISS DRAKE slips out, closing the door] Five reporters pounced on me at the gate and trailed me to your office. I suppose it will all appear in the evening papers, the color of my underwear included.", "PROLOGUE"],
-        ["MISS SAYERS: Where’s <span class='kay-gonda'>Kay Gonda</span>? I must see her. At once.", "PROLOGUE"],
-        ["MISS SAYERS: My brother was a fool. [Sits down] I’ve always known he’d end up like this.", "PROLOGUE"],
+        ["MISS SAYERS: [Brushing her aside] Abominable discipline in your studio, Farrow! That's no way to run the place. [MISS DRAKE slips out, closing the door] Five reporters pounced on me at the gate and trailed me to your office. I suppose it will all appear in the evening papers, the color of my underwear included.", "PROLOGUE"],
+        ["MISS SAYERS: Where's <span class='kay-gonda'>Kay Gonda</span>? I must see her. At once.", "PROLOGUE"],
+        ["MISS SAYERS: My brother was a fool. [Sits down] I've always known he'd end up like this.", "PROLOGUE"],
         ["MISS SAYERS: I did not come here to answer questions. In fact, I did not come here to speak to you at all. I came to find <span class='kay-gonda'>Miss Gonda</span>. It is most urgent.", "PROLOGUE"],
+        ["MISS SAYERS: I have not asked you to talk. In fact, I haven't the slightest interest in anything you may say. I want to see <span class='kay-gonda'>Miss Gonda</span>. It is to <span class='kay-gonda'>her</span> own advantage. To yours also, I suppose.", "PROLOGUE"],
+        ["MISS SAYERS: Most unfortunate, if <span class='kay-gonda'>she</span> is. Highly ill advised. Highly.", "PROLOGUE"],
+        ["MISS SAYERS: [Rising] I have always been told that picture people had abominable manners. Most regrettable. Please tell <span class='kay-gonda'>Miss Gonda</span> that I have tried. I shall not be responsible for the consequences now.", "PROLOGUE"],
+        ["MISS SAYERS: I have never approved of motion pictures. Never saw one. The pastime of morons.", "PROLOGUE"],
+        ["MISS SAYERS: I thought <span class='kay-gonda'>she</span> was a rather charming young woman. A bit anemic. A vitamin deficiency in her diet, no doubt. [Turning to him suddenly] Was <span class='kay-gonda'>she</span> happy? I don't think <span class='kay-gonda'>she</span> was", "PROLOGUE"],
+        ["MISS SAYERS: I do not hate her at all.", "PROLOGUE"],
+        ["MISS SAYERS: Either you are a fool or you don't know where <span class='kay-gonda'>she</span> is yourself. Regrettable, in either case. I wish you a good day.", "PROLOGUE"],
+        ["MISS SAYERS: [Haughtily] I have told them nothing.", "PROLOGUE"],
     ],
-    [], // Watts
-    [], // Perkins
-    [], // Mrs. Perkins
-    [], // Mrs. Shly
-    [], //Gonda
+    [ // Watts
+        [ "MICK WATTS: [Tearing himself loose from them] Miss <i>Sayers</i>?! [Reels ferociously toward her] What did you tell them?", "PROLOGUE" ],
+        ["MICK WATTS: Well, keep your mouth shut! Keep your mouth shut!", "PROLOGUE"],
+        ["MICK WATTS: [In a dull monotone] I don’t know a thing. Save your liquor. Go to hell.", "PROLOGUE"],
+        ["MICK WATTS: I’m talking about nothing—and that goes for everything.", "PROLOGUE"],
+        ["MICK WATTS: I don’t know a thing about <span class='kay-gonda'>Kay Gonda</span>. Never heard of her. . . . <span class='kay-gonda'>Kay Gonda</span>. It’s a funny name, isn’t it? I went to confession once, long ago—and they talked about the redemption of all sins. It’s useless to yell “<span class='kay-gonda'>Kay Gonda</span>” and to think that all your sins are washed away. Just pay two bits in the balcony—and come out pure as snow.", "PROLOGUE"],
+        ["MICK WATTS: I’m not hungry. I stopped being hungry many years ago. But <span class='kay-gonda'>she</span> is.", "PROLOGUE"],
+        ["MICK WATTS: You don’t understand? <span class='kay-gonda'>She</span> doesn’t, either. Only it’s no use. It’s no use trying to unravel, because if you try, you end up with more dirt on your hands than you care to wipe off. There are not enough towels in the world to wipe it off. Not enough towels. That’s the trouble.", "PROLOGUE"],
+        ["MICK WATTS: [His voice emotionless] Do you think I’d want to stay with the lousy bunch of you if it weren’t for <span class='kay-gonda'>her</span>?", "PROLOGUE"],
+        ["MICK WATTS: [Without looking at anyone] A great quest. The quest of the hopeless. Why do we hope? Why do we seek it, when we’d be luckier if we didn’t think that it could exist? Why does <span class='kay-gonda'>she</span>? Why does <span class='kay-gonda'>she</span> have to be hurt? [Whirls suddenly upon the others with ferocious hatred] Goddamn you all! [Rushes out, slamming the door]", "PROLOGUE"]
+    ],
+    [ // Perkins
+        ["Dear Miss Gonda, <br><br>I am not a regular movie fan, but I have never missed a picture of yours. There is something about you which I can’t give a name to, something I had and lost, but I feel as if you’re keeping it for me, for all of us. I had it long ago, when I was very young. You know how it is: when you’re very young, there’s something ahead of you, so big that you’re afraid of it, but you wait for it and you’re so happy waiting. Then the years pass and it never comes. And then you find, one day, that you’re not waiting any longer. It seems foolish, because you didn’t even know what it was you were waiting for. I look at myself and I don’t know. But when I look at you—I do. <br><br>And if ever, by some miracle, you were to enter my life, I’d drop everything, and follow you, and gladly lay down my life for you, because, you see, I’m still a human being.", "ACT 1. SCENE 1."],
+        ["PERKINS: But you don’t understand. I’ve been made <i>Assistant Manager</i>—[Looks for the effect on her face, finds none, adds lamely]—of the Daffodil Canning Company.", "PROLOGUE"],
+        ["PERKINS: [Softly] Rosie, it’s twenty years I’ve waited for it. It’s a long time, twenty years. One gets sort of tired. But now we can take it easy . . . light . . . [With sudden eagerness] . . . you know, <i>light</i> . . . [Coming down to earth, apologetically] . . . easy, I mean.", "ACT 1. SCENE 1."],
+        ["PERKINS: I was sort of planning . . . I’ve been thinking of it for a long time, nights, you know . . . making plans . . . <br><br>I was thinking . . . if we’re very careful, we could take a vacation maybe . . . in a year or two . . . and go to Europe, you know, like Switzerland or Italy . . . [Looks at her hopefully, sees no reaction, adds] . . . It’s where they have mountains, you know. And lakes. And snow high up on the peaks. And sunsets.", "ACT 1. SCENE 1"],
+        ["PERKINS: Look, you don’t understand. I don’t want anything that we need. I want something I don’t need at all.", "ACT 1. SCENE 1."],
+        ["PERKINS: It’s not today, Rosie. It’s for a long, long time back. . . . But I’m set with the firm now. I can take good care of you and the children. But the rest— Rosie, I can’t throw it away for good.", "ACT 1. SCENE 1"],
+        ["PERKINS: Rosie, it’s not that I don’t like what I’ve got. I like it fine. Only . . . Well, it’s like this bathrobe of mine. I’m glad I have it, it’s warm and comfortable, and I like it, just the same as I like the rest of it. Just like that. And no more. There should be more. . . <br><br>A man can’t live his whole life for a bathrobe. Or for things that he feels the same way about. Things that do nothing to him—inside, I mean. There should be something that he’s afraid of —afraid and happy. Like going to church—only not in a church. Something he can look up to. Something—high, Rosie . . . that’s it, <i>high</i>.", "ACT 1. SCENE 1."],
+        [ "PERKINS: Oh, I know I can’t explain it! All I ask is, don’t let’s have that baby, Rosie. That would be the end of it all for me. I’ll be an old man, if I give those things up. I don’t want to be old. Not yet. God, not yet! Just leave me a few years, Rosie!", "ACT 1. SCENE 1."],
+        ["PERKINS: I . . . Miss Gonda, you’ll excuse me, please, you know it’s enough to make a fellow . . . I mean, if I don’t seem to make sense or . . . I mean, if you need help, you can stay here the rest of your life, Miss Gonda.", "ACT 1. SCENE 1."],
+        ["PERKINS: You mean . . . they’re really after you?", "ACT 1. SCENE 1."],
+        ["PERKINS: I don’t care. [She smiles slowly. He points to the room helplessly] Just make yourself at home. You can sleep right here, on the davenport, and I’ll stay outside and watch to see that no one . . .", "ACT 1. SCENE 1."],
+        ["PERKINS: [He mutters helplessly] I . . . I smoke this kind. Easier on your throat, they are. [He looks at her miserably. He has so much to tell her. He fumbles for words. He ends with:] Now, Joe Tucker—that’s a friend of mine—Joe Tucker, he smokes cigars. But I never took to them, never did.", "ACT 1. SCENE 1."],
+        ["PERKINS: [Resolutely] Don’t worry about that. No one will find you here. Not that I’m afraid for myself. Suppose they learn I helped you? Who wouldn’t? Who’d hold that against me? Why should they?", "ACT 1. SCENE 1."],
+        ["PERKINS: Miss Gonda, I . . . I cry when I come home after seeing a picture of yours. I just lock myself in the bathroom and I cry, every time. I don’t know why.", "ACT 1. SCENE 1."],
+        ["PERKINS: You must forgive me if I said anything fresh, you know, or personal. . . <br><br>I . . . I didn’t mean to complain, Miss Gonda, only . . . I guess I’ve missed something along the way. I don’t know what it is, but I know I’ve missed it. Only I don’t know why. . . <br><br> You see, I’m not unhappy at all. In fact, I’m a very happy man— as happiness goes. Only there’s something in me that knows of a life I’ve never lived, the kind of life no one has ever lived, but should. . . <br><br> Who can? Who ever gets a chance at the . . . the very best possible to him? We all bargain. We take the second best. That’s all there is to be had. But the . . . the God in us, it knows the other . . . the very best . . . which never comes.", "ACT 1. SCENE 1."],
+        ["PERKINS: [Fiercely] Look, I know this: let them come, the cops, let them come now and try to get you. Let them tear this house down. I built it—took me fifteen years to pay for it. Let them tear it down, before I let them take you. Let them come, whoever it is that’s after you . . .", "ACT 1. SCENE 1."]
+    ],
+    [ // Mrs. Perkins
+        ["MRS. PERKINS: I would like it very much. Not that I have any hopes of ever being.", "ACT 1. SCENE 1."],
+        ["MRS. PERKINS: And here I was waiting for you. I had something to tell you, a nice surprise for you, and . . .", "ACT 1. SCENE 1"],
+        ["MRS. PERKINS: Yes, you were always a great one for making up ways of wasting good money, George Perkins. And me slaving and skimping and saving every little penny. Swans, indeed! Well, before you go thinking of any swans, you’d better get us a new Frigidaire, that’s all I’ve got to say.", "ACT 1. SCENE 1"],
+        ["MRS. PERKINS: So that’s how you feel about your duties! There’s nothing holier than to raise a family. There’s no better blessing. Haven’t I spent my life making a home for you? Don’t you have everything every decent man struggles for? What else do you want?", "ACT 1. SCENE 1."],
+        ["MRS. PERKINS: [To KAY GONDA, her voice unnaturally emotionless] Why did you come here?", "ACT 1. SCENE 1."]
+    ],
+    [ // Mrs. Shly
+        ["MRS. SHLY: [Dryly] Well, we’ve waited for it long enough.", "ACT 1. SCENE 1."],
+        ["MRS. SHLY: All I gotta say is it’s a fine way to start off on your promotion, coming home at such an hour, keeping us waiting with dinner and . . .", "ACT 1. SCENE 1" ],
+        ["MRS. SHLY: Oh, we ate all right, don’t you worry! Never seen a man that cared two hoops about his family, not two hoops!", "ACT 1. SCENE 1"],
+        ["MRS. SHLY: That, my boy, is nothing to brag about!", "ACT 1. SCENE 1."],
+        ["MRS. SHLY: Have you gone plumb outta your mind? Are you thinking of . . . of . . .", "ACT 1. SCENE 1."],
+        ["MRS. SHLY: [Ferociously] D’you know who you’re talking to? It’s my daughter you’re talking to, not a street woman! To come right out with a thing like that . . . to his own wife . . . to his own . . .", "ACT 1. SCENE 1"],
+        ["MRS. SHLY: So? So that’s it? So I’m making trouble? So I’m a burden to you, am I? Well, I’m glad you came out with it, Mr. Perkins! And here I’ve been, poor fool that I am, slaving in this house like if it was my own! That’s the gratitude I get. Well, I won’t stand for it another minute. Not one minute. [Rushes out Left, slamming the door]", "ACT 1. SCENE 1"]
+    ],
+    [ // Kay Gonda
+        ["[ KAY GONDA stands on the threshold. She wears an exquisitely plain black suit, very modern, austerely severe; a black hat, black shoes, stockings, bag, and gloves. The sole and startling contrast to her clothes is the pale, luminous gold of her hair and the whiteness of her face. It is a strange face with eyes that make one uncomfortable. She is tall and very slender. Her movements are slow, her steps light, soundless. There is a feeling of unreality about her, the feeling of a being that does not belong on this earth. She looks more like a ghost than a woman ] <br><br>KAY GONDA: Please keep quiet. And let me in.", "ACT 1. SCENE 1."],
+        ["KAY GONDA: I have to hide. For the night. It is dangerous. Can you let me stay here?", "ACT 1. SCENE 1."],
+        ["KAY GONDA: I read your letter. And I thought that no one would look for me here. And I thought you would want to help me.", "ACT 1. SCENE 1."],
+        ["KAY GONDA: It will be dangerous for you, if they find me here.", "ACT 1. SCENE 1."],
+        ["KAY GONDA: It will be hard to lose your job and to find yourself in the street. In a dark, lonely street, where you’ll see your friends passing by and looking past you, as if you did not exist. Where you will want to scream and tell them of the great things you know, but no one will hear and no one will answer. It will be hard, won’t it?", "ACT 1. SCENE 1."],
+        ["KAY GONDA: Because they hate me. And they hate all those who take my side.", "ACT 1. SCENE 1."],
+        ["KAY GONDA: If you mean Granton Sayers . . . No, I do not want to speak about Granton Sayers. Forget that. But I am still a murderess. You see, I came here and, perhaps, I will destroy your life—everything that has been your life for forty-three years.", "ACT 1. SCENE 1."],
+        ["KAY GONDA: I told you I am a murderess. I kill so many things in people. I kill the things they live by. But they come to see me because I am the only one who makes them realize that they want those things to be killed. Or they think they do. And it’s their whole pride, that they think and say they do.", "ACT 1. SCENE 1."],
+        ["KAY GONDA: I could not stand it any longer. There are times when one can’t stand it any longer.", "ACT 1. SCENE 1."],
+        ["KAY GONDA: I like to think that I mean something to people.", "ACT 1. SCENE 1."],
+        ["KAY GONDA: And . . . the God in you, you really want it?", "ACT 1. SCENE 1."]
+    ],
     [], // Fink
     [], // Mrs. Fink
     [], // Langley
-    [], // Hammond
     [], // Hix
     [], // Twomey
     [], // Esterhazy
     [], // Jans
-    [], // Mrs. Monaghan
     [] // Dawes
 ];
 
@@ -98,9 +163,10 @@ function loadCharacters() {
         characterDiv.classList.add("character-block")
 
         var img = document.createElement("img");
-        img.src = "imgs/cast/" + String(c[0]).toLowerCase().replaceAll(" ", "-") + ".png";
-        if (c[0].indexOf(">") > 0) {
+        if (c[0].includes(">")) {
             img.src = "imgs/cast/kay-gonda.png";
+        } else {
+            img.src = "imgs/cast/" + String(c[0]).toLowerCase().replaceAll(" ", "-") + ".png";
         }
         img.alt = c[0];
         characterDiv.appendChild(img);
@@ -137,14 +203,29 @@ function loadCharacters() {
 
 function loadCharacter(name) {
     for (var i = 0; i < characters.length; i++) {
-        if (name === characters[i][0].toLowerCase().replaceAll(" ", "-")) {
+        if (name === characters[i][0].toLowerCase().replaceAll(" ", "-") || (name === "kay-gonda" && i === 9)) {
             let list = document.createElement('div');
             list.classList = 'quote-list';
             
             let header = document.createElement('div');
             header.classList = "quote-header";
             let prevButton = document.createElement('button');
+            prevButton.innerHTML = characters[(i + characters.length - 1) % characters.length][0];
+            const charPrev = prevButton.textContent;
+            prevButton.onclick = (function (e) {
+                e.preventDefault();
+                window.location.href = window.location.pathname+"?character=" + charPrev.toLowerCase().replaceAll(" ", "-");
+            })
+            prevButton.innerHTML = "< " + prevButton.innerHTML;
+
             let nextButton = document.createElement('button');
+            nextButton.innerHTML = characters[(i + 1) % characters.length][0];
+            const charNext = nextButton.textContent;
+            nextButton.onclick = (function (e) {
+                e.preventDefault();
+                window.location.href = window.location.pathname+"?character=" + charNext.toLowerCase().replaceAll(" ", "-");
+            });
+            nextButton.innerHTML += " >";
             
             let nameDiv = document.createElement('div');
             nameDiv.classList = "character-title";

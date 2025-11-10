@@ -93,6 +93,7 @@ body {
 }
 
 .section-preview-container {
+    cursor: pointer;
     background: rgb(17, 1, 24);
     border: 1px solid rgba(255, 255, 255, 0);
     border-radius: 10px;
@@ -373,6 +374,7 @@ h3 {
     background: rgba(208, 0, 255, 0.04);
 }
 .character-block {
+    cursor: pointer;
     padding: 20px 10px;
     border-radius: 8px;
     width: 85%;
@@ -383,15 +385,17 @@ h3 {
 }
 .character-block h3 {
     color: rgb(255, 182, 203);
+    margin: 4px 4px 0;
+    padding: 0;
 }
 #characters img {
     width: 100%;
     max-height: 18vh;
-    margin-bottom: 6px;
+    margin-bottom: 14px;
 }
 #characters h4 {
     font-weight: normal;
-    margin: 6px 0 0;
+    margin: 10px 0 0;
 }
 
 .quote-list {
@@ -430,7 +434,7 @@ h3 {
 .quote {
     color: black;
     background: rgb(255, 251, 239);
-    padding: 4px 20px;
+    padding: 4px 30px;
     text-align: center;
 
     transition: transform 1s ease-in-out;
@@ -465,12 +469,22 @@ h3 {
     text-shadow: 8px 8px 20px rgb(0, 0, 0);
     font-size: 100px;
     margin: 0;
+
+    transition: color 1.5s ease-in-out;
+}
+#main-title h1:hover {
+    color: rgb(238, 35, 126);
 }
 #main-title h3 {
     text-shadow: 8px 8px 20px rgb(0, 0, 0);
     font-size: 36px;
     font-weight: normal;
     font-style: normal;
+
+    transition: color 1.5s ease-in-out;
+}
+#main-title h3:hover {
+    color: rgb(227, 50, 246);
 }
 #begin-button {
     cursor: pointer;
@@ -509,13 +523,26 @@ h3 {
     text-align: right;
 }
 
+#sub-header .left:hover {
+    transform: translate(-2px, 2px);
+}
+#sub-header .right:hover {
+    transform: translate(2px, 2px);
+}
+
 
 
 
 /* About section */
 #about-content {
-    margin: 20vh 10vw;
+    margin: 12vh 10vw;
     padding: 36px 48px;
     background: black;
+    color: white;
+}
+#about-content h1 {
+    margin-top: 0;
+}
+#about-content a {
     color: white;
 }
