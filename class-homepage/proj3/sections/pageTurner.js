@@ -18,28 +18,36 @@ function previousPage() {
                 // redirect to prev section
                 switch(window.location.pathname.split("/").pop()) {
                     case "prologue.html":
-                        window.location.href = "introduction.html";
+                    case "prologue":
+                        window.location.href = "introduction.html?page=2";
                         break;
                     case "act1_scene1.html":
-                        window.location.href = "prologue.html";
+                    case "act1_scene1":
+                        window.location.href = "prologue.html?page=13";
                         break;
                     case "act1_scene2.html":
-                        window.location.href = "act1_scene1.html";
+                    case "act1_scene2":
+                        window.location.href = "act1_scene1.html?page=11";
                         break;
                     case "act1_scene3.html":
-                        window.location.href = "act1_scene2.html";
+                    case "act1_scene3":
+                        window.location.href = "act1_scene2.html?page=11";
                         break;
                     case "act2_scene1.html":
-                        window.location.href = "act1_scene3.html";
+                    case "act2_scene1":
+                        window.location.href = "act1_scene3.html?page=8";
                         break;
                     case "act2_scene2.html":
-                        window.location.href = "act2_scene1.html";
+                    case "act2_scene2":
+                        window.location.href = "act2_scene1.html?page=7";
                         break;
                     case "act2_scene3.html":
-                        window.location.href = "act2_scene2.html";
+                    case "act2_scene3":
+                        window.location.href = "act2_scene2.html?page=8";
                         break;
                     case "act2_scene4.html":
-                        window.location.href = "act2_scene3.html";
+                    case "act2_scene4":
+                        window.location.href = "act2_scene3.html?page=8";
                         break;
                 }
             }
@@ -58,31 +66,47 @@ function nextPage() {
                 updatePageNumURL(i + 1);
                 window.scrollTo(0,0);
             } else {
+                console.log(window.location.pathname);
                 // redirect to next section
-                switch(window.location.pathname.split("/").pop()) {
+                var path = window.location.pathname.split("/").pop();
+                switch(path) {
                     case "introduction.html":
+                    case "introduction":
                         window.location.href = "prologue.html";
                         break;
                     case "prologue.html":
+                    case "prologue":
                         window.location.href = "act1_scene1.html";
                         break;
                     case "act1_scene1.html":
+                    case "act1_scene1":
                         window.location.href = "act1_scene2.html";
                         break;
                     case "act1_scene2.html":
+                    case "act1_scene2":
                         window.location.href = "act1_scene3.html";
                         break;
                     case "act1_scene3.html":
+                    case "act1_scene3":
                         window.location.href = "act2_scene1.html";
                         break;
                     case "act2_scene1.html":
+                    case "act2_scene1":
                         window.location.href = "act2_scene2.html";
                         break;
                     case "act2_scene2.html":
+                    case "act2_scene2":
                         window.location.href = "act2_scene3.html";
                         break;
                     case "act2_scene3.html":
+                    case "act2_scene3":
                         window.location.href = "act2_scene4.html";
+                        break;
+                    case "act2_scene4.html":
+                    case "act2_scene4":
+                        window.location.href = "../scenes.html";
+                    default:
+                        console.log("Error... window path: " + path);
                         break;
                 }
             }

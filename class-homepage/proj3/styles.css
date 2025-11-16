@@ -1,5 +1,8 @@
 :root {
     --bottom-header-space: 78px;
+    --ideal-title-color: rgb(238, 35, 126);
+    --ideal-title-secondary-color: rgb(202, 40, 113);
+    --kay-gonda-white-bg: rgb(137, 6, 137);
 }
 
 html {
@@ -106,12 +109,6 @@ body {
 
     transition: transform 0.4s ease-in-out;
 }
-@media (max-width: 720px) {
-    .section-preview-container img {
-        width: 28vw;
-        
-    }
-}
 .section-preview-container:hover {
     transform: scale(1.01, 1.01);
     /* transform: translate(2px, 2px); */
@@ -126,6 +123,19 @@ body {
     flex: 0 1 ;
     aspect-ratio: 1;
     height: 34dvh;
+    max-width: 36dvw;
+}
+@media (max-width: 720px) {
+    .section-preview-container {
+        max-height: 80vh;
+        justify-content: start;
+        flex-direction: column;
+    }
+    .section-preview-container img {
+        flex: 100 0;
+        max-height: 40dvh;
+        max-width: 70dvw;
+    }
 }
 
 .section-preview-content {
@@ -163,7 +173,7 @@ h3 {
 }
 .kay-gonda {
     color: rgb(209, 130, 238);
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 .emphasis {
     text-transform:uppercase;
@@ -223,6 +233,12 @@ h3 {
     text-align: center;
 }
 
+.dialogue {
+    font-weight: 500;
+    color: rgb(253, 204, 228);
+}
+
+
 
 
 
@@ -246,7 +262,15 @@ h3 {
 }
 .header a {
     color: white;
-    font-weight: bold;
+    text-decoration: none;
+}
+.header a b {
+    color: white;
+    transition: color 2s ease-in-out, text-shadow 1s ease-in-out;
+}
+.header a b:hover {
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
+    color: var(--ideal-title-color);
 }
 .header h2 {
     font-size: 22px;
@@ -288,8 +312,6 @@ h3 {
 
 
 
-
-
 /* Scenes */
 .no-indent {
     text-indent: 0;
@@ -300,13 +322,18 @@ h3 {
     background-color: rgb(251, 251, 250);
 
     padding: 18px 36px;
-    width: 420px;
+    width: 60vw;
     margin: 20px auto;
     columns: 1;
 }
+.letter .kay-gonda {
+    font-weight: bold;
+    color: var(--kay-gonda-white-bg);
+}
 .less-marg {
+    width: 90%;
     padding: 20px;
-    margin: 0px;
+    margin: 0 auto;
 }
 .script {
     column-width: 34vw;
@@ -407,10 +434,27 @@ h3 {
 .quote-header {
     display: flex;
     align-items: center;
-    margin: 10px 60px;
+    margin: 10px 4dvw;
     justify-content: space-between;
-    gap: 40px;
+    gap: 6dvw;
 }
+.quote-header button {
+    border-radius: 20px;
+    background: var(--ideal-title-color);
+    color: white;
+    border: 2px outset white;
+    padding: 8px 14px;
+}
+.quote-header button .kay-gonda {
+    color: var(--kay-gonda-white-bg);
+}
+.quote-header button:hover {
+    cursor: pointer;
+    background: var(--ideal-title-secondary-color);
+    border: 2px inset white;
+    padding: 10px 14px;
+}
+
 .character-title {
     color: white;
     text-align: center;
@@ -444,9 +488,11 @@ h3 {
     transform: scale(1.02, 1.02);
 }
 .quote .kay-gonda {
-    color: rgb(181, 16, 181);
+    font-weight: bold;
+    color: var(--kay-gonda-white-bg);
 }
 .quote h3 {
+    color: rgb(140, 6, 64);
     font-weight: bold;
     font-style: normal;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -473,7 +519,7 @@ h3 {
     transition: color 1.5s ease-in-out;
 }
 #main-title h1:hover {
-    color: rgb(238, 35, 126);
+    color: var(--ideal-title-color)
 }
 #main-title h3 {
     text-shadow: 8px 8px 20px rgb(0, 0, 0);
@@ -517,17 +563,19 @@ h3 {
 #sub-header .left {
     flex-basis: 50%;
     text-align: left;
+    text-shadow: -6px 6px 5px rgba(0, 0, 0, 0.8);
 }
 #sub-header .right {
-    flex-basis: 50%;;
+    flex-basis: 50%;
     text-align: right;
+    text-shadow: 6px 6px 5px rgba(0, 0, 0, 0.8);
 }
 
 #sub-header .left:hover {
-    transform: translate(-2px, 2px);
+    font-style: normal;
 }
 #sub-header .right:hover {
-    transform: translate(2px, 2px);
+    font-style: normal;
 }
 
 
