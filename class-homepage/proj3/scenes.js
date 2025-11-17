@@ -24,5 +24,4 @@ function addSceneListeners() {
 
 window.addEventListener("load", (event) => {
     addSceneListeners();
-    document.getElementById("scene-index-padding-top").scrollIntoView();
 });
